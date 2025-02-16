@@ -22,9 +22,16 @@
     background-color: #FFEBD0
   &-3
     background-color: #E6F0CD
-
   &-4
-    background-color: #EAF8FD
+    background-color: #FFF4E6
+  &-5
+    background-color: #F6F3EF
+  &-primario
+    background-color: #86B60C
+  &-secundario
+    background-color: #36CEEF
+  &-terciario
+    background-color: #FF9D1C
   &-info
     background-color: #E8EEFD
   &-sintesis
@@ -40,22 +47,29 @@
   &.color-terciario
     border-top: 5px solid $color-terciario !important
 
+
 // Full Width Background
-.bg-full-width
-  background-size: cover
+.bg-full-width, .bg-full-width-2
   background-repeat: no-repeat
   background-position: bottom
   margin-inline: -3.3rem
   @media screen and (max-width: $bp-max-sm)
     padding-left: 1.5rem
     padding-right: 1.5rem
+.bg-full-width
+  background-size: cover
+.bg-full-width-2
+  background-size: contain
 
 .bg-fondo
   &-1
     background-image: url("../assets/bg/bg1.png") !important
     background-position: top
   &-2
-    // background-image: url("../assets/bg/bg2.png") !important
+    background-image: url("../assets/bg/bg2.png") !important
+    background-position: bottom
+  &-3
+    background-image: url("../assets/bg/bg3.png") !important
     background-position: bottom
   &-slider
     background-image: url("../assets/bg/bg-slider.png") !important
@@ -67,7 +81,7 @@ $custom-card-shadow: 0 4px 8px rgba(0,0,0,0.1)
 $custom-card-text-bg: #FFF
 $custom-card-text-padding: 15px
 $custom-card-text-font-size: 14px
-$custom-card-img-height: 322px
+$custom-card-img-height: 200px
 .custom-image-card
   border-radius: $custom-card-border-radius
   overflow: hidden
@@ -229,4 +243,16 @@ $custom-card-img-height: 322px
       margin-left: 3.5rem
     // @media (min-width: $bp-min-lg  )
     margin-left: -4rem     
-    z-index:  
+
+
+.rounded-top
+  border-top-left-radius: 16px !important
+  border-top-right-radius: 16px !important
+
+.rounded-bottom
+  border-bottom-left-radius: 16px !important
+  border-bottom-right-radius: 16px !important
+
+
+.lista-ul--color.color-dark li > i:first-of-type
+  color: #453179 !important
